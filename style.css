@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
 
+html, body {
+  font-family: 'Poppins', sans-serif;
+  color: #222;
+}
+
+footer{
+  background-color: #3F3F3F;
+  color: #D5D5D5;
+}
+
 /*---Media Queries --*/
 @media (max-width: 992px) {
 
