@@ -5,45 +5,89 @@ html, body {
   color: #222;
 }
 
-footer{
-  background-color: #3F3F3F;
-  color: #D5D5D5;
+/*--- Bootstrap Padding Fix --
+  For spacing when colums wrap */
+[class*="col-"] {
+    padding: 1rem;
 }
 
-/*---Media Queries --*/
-@media (max-width: 992px) {
-
-  }
-@media (max-width: 768px) {
-  
-}
-@media (max-width: 576px) {
-  
+.carousel-caption{
+  top:50%;
+  transform: translateY(-50%);
 }
 
-/*---Firefox Bug Fix --*/
-.carousel-item {
-  transition: -webkit-transform 0.5s ease;
-  transition: transform 0.5s ease;
-  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
-  -webkit-backface-visibility: visible;
-  backface-visibility: visible;
+.carousel-title {
+  font-size: 5rem;
+  font-weight: bold;
+  text-shadow: 1px 1px 15px black;
 }
+
+.carousel-text {
+  font-size: 2rem;
+  font-weight: 500;
+  text-shadow: 1px 1px 8px black;
+}
+
+.btn-primary {
+  background-color: #6648B1;
+  border-color: #563D7C;
+}
+
+.btn-primary:hover {
+  background-color: #563D7C;
+  border-color: #563D7C;
+}
+
+.btn-outline-light:hover {
+  background-color: #F8F9FAC2;
+}
+
+hr {
+  width: 95%;
+  border-top: 2px solid #b4b4b4;
+}
+
+[class*="fa-"] {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.fa-code {
+  color: #E54D26;
+}
+
+.fa-bold {
+  color: #563D7C;
+}
+
+.fa-css3 {
+  color: #2163AF;
+}
+
+.fun-btn {
+  width: 100%;
+}
+
+.fun-btn:hover {
+  background-color: #D5D5D5;
+}
+
+.fun-btn:focus {
+  box-shadow: none;
+}
+
 /*--- Fixed Background Image --*/
 figure {
-  position: relative;
   width: 100%;
-  height: 60%;
-  margin: 0!important;
+  height: 60vh;
+  margin: 0 !important;
 }
 .fixed-wrap {
-  clip: rect(0, auto, auto, 0);
-  position: absolute;
-  top: 0;
-  left: 0;
+  clip-path: inset(0 0 0 0);
   width: 100%;
   height: 100%;
 }
+
 #fixed {
   background-image: url('img/mac.png');
   position: fixed;
@@ -58,9 +102,75 @@ figure {
           transform: translateZ(0);
   will-change: transform;
 }
-/*--- Bootstrap Padding Fix --*/
-[class*="col-"] {
-    padding: 1rem;
+/* -- */
+
+.card {
+  max-width: 85%;
+  margin: 0 auto;
+}
+
+.social a {
+  font-size: 4,5rem;
+  padding: 0 3rem;
+}
+
+.fa-facebook {
+  color: #3B5998;
+}
+
+.fa-twitter {
+  color: #00ACED;
+}
+
+.fa-instagram {
+  color: #517FA4;
+}
+
+.fa-youtube {
+  color: #B00;
+}
+
+.fa-github {
+  color: #24292E;
+}
+
+.social [class*="fa-"]:hover {
+  color: #D5D5D5;
+}
+
+footer{
+  background-color: #3F3F3F;
+  color: #D5D5D5;
+  margin-top: 3.5rem;
+  padding-top: 2.5rem;
+}
+
+footer a {
+  color: #D5D5D5;
+}
+
+footer a:hover{
+  text-decoration: none;
+  color: #F8F9FAC2;
+}
+
+hr.light {
+  border-top: 1px solid #D5D5D5;
+}
+
+.w-75 {
+  width: 75%
+}
+
+/*---Media Queries --*/
+@media (max-width: 992px) {
+
+  }
+@media (max-width: 768px) {
+  
+}
+@media (max-width: 576px) {
+  
 }
 
 /*
@@ -79,11 +189,3 @@ Large (lg) devices (desktops, 992px and up)
 Extra (xl) large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) { ... }
 */
-
-
-
-
-
-
-
-

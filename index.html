@@ -12,7 +12,7 @@
   <title>W3Noobie | Bootstrap 4</title>
 </head>
 <body>
-  <nav class="nav navbar-expand-md navbar-light bg-light sticky-top container-fluid px-3">
+  <nav class="nav navbar-expand-md navbar-light bg-light sticky-top container-fluid px-5 py-2">
     <a class="navbar-brand" href="#">
       <img class="img-fluid" src="img/logo.png"/>
     </a>
@@ -47,11 +47,11 @@
     </ol>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img class="w-100 h-100 img-fluid" src="img/background.png" alt="First slide">
+        <img class="w-100 h-100" src="img/background.png" alt="First slide">
         <div class="carousel-caption">
-          <p class="display-3">Bootstrap 4</p>
-          <p class="display-4">Complete Website Layout</p>
-          <button class="btn btn-outline-light btn-lg" type="button">Demo</button>
+          <h1 class="carousel-title">Bootstrap 4</h1>
+          <h2 class="carousel-text mb-4">Complete Website Layout</h2>
+          <button class="btn btn-outline-light btn-lg mr-2" type="button">Demo</button>
           <button class="btn btn-primary btn-lg" type="button">Get Bootstrap</button>
         </div>
       </div>
@@ -71,9 +71,9 @@
       <span class="sr-only">Next</span>
     </a>
   </div>
-  <div class="jumbotron">
+  <div class="jumbotron px-1 py-3">
     <div class="container">
-      <div class="row">
+      <div class="row align-items-baseline">
         <div class="col-md-9 col-xl-10">
           <p class="lead">
             We offer full responsive websites, built with Bootstrap and with
@@ -90,6 +90,7 @@
     <p class="display-4">
       Built with ease
     </p>
+    <hr />
     <p class="lead">
       Reliable pages built fast and easy with ready to plug classes and interactive components provided by Bootstrap.
     </p>
@@ -113,7 +114,7 @@
       </div>
     </div>
   </div>
-  <div class="container-fluid mt-5 px-3">
+  <div class="container-fluid mt-5 px-4">
     <div class="row">
       <div class="col-xs-12 col-md-7">
         <h2 class="">If we build it</h2>
@@ -126,30 +127,34 @@
       </div>
     </div>
   </div>
-  <div class="container-fluid">
-    <button class="" type="button" data-toggle="collapse" data-target="#fun-section">Click for fun!</button>
-  </div>
+  <hr />
+  <figure>
+    <div class="fixed-wrap">
+      <div id="fixed"></div>
+    </div>
+  </figure>
+  <button class="btn fun-btn" type="button" data-toggle="collapse" data-target="#fun-section">Click for fun!</button>
   <div class="collapse" id="fun-section">
     <div class="container-fluid">
       <div class="row">
         <div class="col-sm-6 col-md-3">
-          <img class="gif w-100" src="gif/unicorn.gif"/>
+          <img class="w-100" src="gif/unicorn.gif"/>
         </div>
         <div class="col-sm-6 col-md-3">
-          <img class="gif w-100" src="gif/panda.gif"/>
+          <img class="w-100" src="gif/panda.gif"/>
         </div>
         <div class="col-sm-6 col-md-3">
-          <img class="gif w-100" src="gif/poo.gif"/>
+          <img class="w-100" src="gif/poo.gif"/>
         </div>
         <div class="col-sm-6 col-md-3">
-          <img class="gif w-100" src="gif/chicken.gif"/>
+          <img class="w-100" src="gif/chicken.gif"/>
         </div>
       </div>
     </div>
   </div>
-  <div class="container px-3">
+  <div class="container mt-5 px-3">
     <h2 class="display-4 text-center">Meet the team</h2>
-    <hr/>
+    <hr />
   </div>
   <div class="container-fluid px-3">
     <div class="row">
@@ -167,7 +172,7 @@
         <div class="card">
           <img class="card-img-top" src="img/team2.png" alt="Jenn Blossom">
           <div class="card-body">
-            <div class="card-title">John Doe</div>
+            <div class="card-title">Allison Weber</div>
             <p class="card-text">Front-end developer and user experience expert.</p>
             <a href="#"><button class="btn btn-outline-secondary" type="button">See Profile</button></a>
           </div>
@@ -185,7 +190,7 @@
       </div>
     </div>
   </div>
-  <div class="container-fluid mt-5 px-3">
+  <div class="container-fluid mt-5 px-4">
     <div class="row">
       <div class="col-xs-12 col-md-8">
         <h2 class="">Our philosophy</h2>
@@ -198,9 +203,9 @@
         <img class="d-block img-fluid" src="img/desk.png"/>
       </div>
     </div>
-    <hr/>
+    <hr />
   </div>
-  <div class="container px-3">
+  <div class="container">
     <div class="row text-center">
       <div class="col-12"><h2>See our social media</h2></div>
       <div class="col-12 social">
@@ -213,35 +218,35 @@
     </div>
   </div>
   <footer>
-    <div class="container-fluid px-3">
+    <div class="container-fluid">
       <div class="row text-center">
         <div class="col-md-4">
           <img class="img-fluid" src="img/w3newbie.png">
-          <hr class="light"/>
+          <hr class="light w-75"/>
           <p>555-333-777-999</p>
           <p>mail@w3noobie.com</p>
           <p>59 MAC St</p>
           <p>München, Deutschland</p>
         </div>
         <div class="col-md-4">
-          <hr class="light"/>
+          <hr class="light w-75"/>
           <h3>Our Hours</h3>
-          <hr class="light"/>
+          <hr class="light w-75"/>
           <p>Monday to Friday: 8am to 4pm</p>
           <p>Saturday: 8am to 2pm</p>
           <p>Sunday: No Avaible</p>
         </div>
         <div class="col-md-4">
-          <hr class="light"/>
+          <hr class="light w-75"/>
           <h3>Offices</h3>
-          <hr class="light"/>
+          <hr class="light w-75"/>
           <p>Hesse Straße</p>
           <p>K Straße</p>
           <p>Cantor Straße</p>
         </div>
         <div class="col-12">
           <hr class="light"/>
-          <p>&copy;w3noobie.com</p>
+          <a href="#">&copy;w3noobie.com</a>
         </div>
         </div>
       </div>
