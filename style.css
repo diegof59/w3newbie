@@ -3,6 +3,7 @@
 html, body {
   font-family: 'Poppins', sans-serif;
   color: #222;
+  font-size:;
 }
 
 /*--- Bootstrap Padding Fix --
@@ -11,21 +12,37 @@ html, body {
     padding: 1rem;
 }
 
+.display-4 {
+  font-size: clamp(,3.2rem,)
+}
+
+.lead {
+  font-size: 1.15rem;
+}
+
 .carousel-caption{
   top:50%;
   transform: translateY(-50%);
+  bottom: unset;
 }
 
 .carousel-title {
-  font-size: 5rem;
+  font-size: clamp(2rem,5vw,70px);
   font-weight: bold;
   text-shadow: 1px 1px 15px black;
 }
 
 .carousel-text {
-  font-size: 2rem;
+  font-size: clamp(1rem,3vw,50px);
   font-weight: 500;
   text-shadow: 1px 1px 8px black;
+  margin-bottom: clamp(8px,3.5vw,1.5em);
+}
+
+.carousel-caption button {
+  font-size: clamp(.8rem,2vw,20px);
+  padding: .5em 1em;
+  margin-bottom: 1vw;
 }
 
 .btn-primary {
@@ -170,7 +187,7 @@ hr.light {
   
 }
 @media (max-width: 576px) {
-  
+ 
 }
 
 /*
